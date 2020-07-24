@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.map-container {
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#myMap {
+    margin-top: 20px;
+    width: 800px;
+    height: 600px;
+    margin-left: 10px;
+}
+
+.map-objects {
+    margin-top: 20px;
+    height: 600px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.map-object {
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.map-object:first-of-type {
+    margin-top: 10px;
+}
+
+.map-object:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: rgba(60, 60, 184, 0.63);
+}
+
+.control-block {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1100px;
+}
+
+#sortByRating {
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    height: 35px;
+    background: #bbbdc5b2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#sortByRating:hover {
+    background: #828285b2;
+    color: whitesmoke;
+}
+
+.map-description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selected {
+    background: rgba(60, 60, 184, 0.63);
+}
+
+@media screen and (max-width: 910px) {
+    #myMap {
+
+        width: 700px;
+    }
+
+    .map-object:first-of-type {
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 820px) {
+    .map-container {
+        flex-direction: column;
+    }
+
+    #myMap{
+        margin: 0 auto;
+    }
+
+    .map-objects {
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x: scroll;
+        width: 700px;
+        height: 110px;
+    }
+
+    .map-object {
+        margin-top: 0;
+        margin-right: 10px;
+        height: 90px;
+        max-width: 320px;
+    }
+
+    .control-block {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .map-description{
+        flex-direction: column;
+        justify-content: none;
+    }
+
+    @media screen and (max-width: 700px) {
+        #myMap {
+            width: 600px;
+        }
+        .map-objects {
+            
+            width: 600px;
+            
+        }
+    }
+}

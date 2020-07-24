@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="css/MarkerCluster.css" />
+    <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="js/MarkerCluster.Default.ie.css" /><![endif]-->
+    <script src="js/leaflet.markercluster-src.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="control-block">
+        <button type="submit" id="sortByRating">Сортировать по рейтингу</button>
+    </div>
+    <main class="map-container">
+        <div id="myMap"></div>
+        <div class="map-objects" id="objects-field">
+        </div>        
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
